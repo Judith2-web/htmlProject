@@ -1,0 +1,39 @@
+.navbar  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar ul {
+display: flex;
+flex-direction: row;
+gap: 15px;
+list-style: none;
+}
+.navbar ul li {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.navbar ul li:hover {
+    color: aquamarine;
+}
+.bg  {
+    background: #010d50;
+    color: #FFFFFF;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 20px;
+    color: #1C1B2D
+}
+
+.signup {
+    background: #FFFFFF;
+    color: aquamarine;
+    padding: 15px;
+    border-radius: 10px;
+}
