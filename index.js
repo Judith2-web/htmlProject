@@ -18,11 +18,11 @@ x = 123;
 
 console.log(x);
 
-Let age = 25;
+let age = 25;
 let price = 10.99;
 
-console.log(`You are $(age) years old`);
-console.log(`The price is $(Price)`);
+console.log(`You are ${age} years old`);
+console.log(`The price is ${price}`);
 
 
 //this is a comment
