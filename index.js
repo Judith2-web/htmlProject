@@ -18,9 +18,15 @@ x = 123;
 
 console.log(x);
 
-let age = 25;
+
 let price = 10.99;
 let gpa = 2.1;
+
+
+
+console.log(`The price is $${price}`);
+console.log(`Your gpa is: ${gpa}`);
+
 
 let firstName = "Jay";
 let favouriteFood = "Yam & Eggs";
@@ -32,10 +38,24 @@ console.log(`Your name is ${firstName}`);
 console.log(`You like ${favouriteFood}`);
 console.log(`Your email is ${email}`);
 
+let online = false;
+let forSale = true;
 
-console.log(`You are ${age} years old`);
-console.log(`The price is $${price}`);
-console.log(`Your gpa is: ${gpa}`);
+
+console.log(`Bro is online: ${online}`);
+console.log(`Is this car for sale: ${forSale}`);
+
+
+let fullName = "Judith Ighodaro";
+let age = 25;
+let isStudent= false;
+
+document.getElementById("p1").textContent = `My name is ${fullName}`;
+document.getElementById("p2").textContent = `I am ${age} years old`;
+document.getElementById("p3").textContent = `Enrolled: ${isStudent} `;
+
+
+
 
 
 //this is a comment
