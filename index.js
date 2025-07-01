@@ -54,6 +54,54 @@ document.getElementById("p1").textContent = `My name is ${fullName}`;
 document.getElementById("p2").textContent = `I am ${age} years old`;
 document.getElementById("p3").textContent = `Enrolled: ${isStudent} `;
 
+// arithmetic operators = operands (values, varables, etc.)
+//                        operators (+ - * /)
+//                        ex. 11 = x + 5;
+
+let students =  30;
+
+students = students + 1;
+students = students - 1;
+students = students * 2;
+students = students / 2;
+students = students ** 2;
+
+//students += 1;
+//students -= 1;
+//students *= 2;
+//students /= 2;
+//students **= 2;
+
+console.log(students);
+
+
+//students++;
+//students--;
+
+/*
+
+operator precedence
+1. parenthesis ()
+2. esponents **
+3. multiplication & division & module * / %
+4. additiona & substraction
+
+*/ 
+
+let result = 1 + 2 * 3 + 4 ** 2;
+
+console.log(result);
+
+let total = 12 % 5 + 8 / 2;
+
+console.log(total);
+
+let it = 6 / 2 ** (2 + 5);
+
+console.log(it);
+
+
+
 
 
 
