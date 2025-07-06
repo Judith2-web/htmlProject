@@ -1,95 +1,161 @@
+
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
 
-<h2>My first website</h2>
+  body, html {
+    height: 100%;
+    background: #062525;
+  }
+ 
+  .form-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px; /* Fixes the form being cut off */
+    padding-bottom: 40px;
+  }
+ 
+  .form-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+  }
+ 
+  .navbar {
+    background-color: #f8f9fa;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .navbar .logo {
+    font-weight: bold;
+    font-size: 24px;
+  }
+ 
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .navbar li {
+    cursor: pointer;
+  }
+ 
+  .signup {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
 
-<form action="action_page.php" method="post">
-    <div>
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname" Placeholder="Judith" required><br>
- </div>
- <br> 
- <div>
-    <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname" value="James" required>
+</style>
+</head>
+<body class="bg">
+
+  <nav class="navbar">
+    <h3 class="logo">JayCloth</h3>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+    <button type="button" class="signup">Sign up</button>
+  </nav>
+
+  <div class="form-container">
+    <div class="card shadow form-card">
+      <form action="#" method="post">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" name="username" />
+        </div>
+
+        <div class="mb-3">
+          <label for="fname" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="fname" name="fname" />
+        </div>
+
+        <div class="mb-3">
+          <label for="lname" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lname" name="lname" />
+        </div>
+
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender" name="gender">
+            <option selected>Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Hermaphrodite">Hermaphrodite</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="bdate" class="form-label">Date Of Birth</label>
+          <input type="date" class="form-control" id="bdate" name="bdate" />
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" />
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" name="password" />
+        </div>
+
+        <div class="mb-3">
+          <label for="quantity" class="form-label">Quantity</label>
+          <input type="number" class="form-control" id="quantity" name="quantity" min="0" max="99" value="1" />
+        </div>
+
+        <div class="mb-3">
+          <label for="payment" class="form-label">Payment Method</label>
+          <select class="form-select" id="payment" name="payment">
+            <option value="Cash">Cash</option>
+            <option value="Pos">POS</option>
+            <option value="Transfer">Transfer</option>
+          </select>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" name="check" />
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="examplesubscribe" name="subscribe" />
+          <label class="form-check-label" for="examplesubscribe">Subscribe</label>
+        </div>
+
+        <button type="submit" id="mySubmit2" class="btn btn-primary w-100">Submit</button>
+      </form>
+    </div>
   </div>
-<br>
-  <div>
-    <label for="pass">password:</label>
-  <input type="password" id="pass" name="pass" maxlength="12" required>
-  </div>
-<br>
-  <div>
-    <label for="email">email:</label>
-  <input type="email" id="email" name="email" placeholder="jays@gmail.com" required>
-  </div>
-<br>
-  <div>
-    <label for="phone">phone:</label>
-  <input type="tel" id="phone" name="phone" placeholder="123-567-9100" required>
-  </div>
-  <br>
 
-  <div>
-    <label for="bdate">birthdate:</label>
-  <input type="date" id="bdate" name="bdate" >
-  </div>
-<br>
-
-<div>
-    <label for="quantity">quantity:</label>
-  <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">  
-</div>
-<br>
-
-<div>
-
-  <label for="title">title</label>
-
-    <label for="Mr.">Mr.</label>
-    <input type="radio" id="Mr." name="title" value="Mr.">
-
-    <label for="Mrs.">Mrs.</label>
-    <input type="radio" id="Mrs." name="title" value="Mrs.">
-
-    <label for="PhD.">PhD.</label>
-    <input type="radio" id="PhD." name="title" value="PhD.">
-  </div>
-
-  <br>
-
-  <div>
-     <label for="payment">Payment</label>
-     <select id="payment" name="payment">
-     <option value="Cash">Cash</option>
-     <option value="Pos">Pos</option>
-     <option value="Transfer">Transfer</option>
-    </select>
-  </div>
-
-  <br>
-
-  <div>
-    <label for="Subscribe">Subcribe:</label>
-    <input type="checkbox" id="subscribe" name="subscribe"> 
-  </div>
-
-<div>
-    <input type="reset">
-</div>
-
-<br>
-
-<div>
-    <input type="submit">
-</div>
-</form>
-
-<p>Note that the form itself is not visible.</p>
-
-<p>Also note that the default width of text input fields is 20 characters.</p>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
-
