@@ -10,6 +10,12 @@ const usernameInput = document.getElementById("username");
     console.log("Username:", this.value);
   });
 
+ const firstnameInput = document.getElementById("firstname");
+
+  firstnameInput.addEventListener("keyup", function () {
+    console.log("firstName:", this.value);
+  });
+
 // document.getElementById("myH1").textContent = `Hello`;
 // document.getElementById("myP").textContent = `My first JavaScript`;
 
