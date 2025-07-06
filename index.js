@@ -10,10 +10,10 @@ const usernameInput = document.getElementById("username");
     console.log("Username:", this.value);
   });
 
- const firstnameInput = document.getElementById("firstname");
+ const firstnameInput = document.getElementById("fname");
 
   firstnameInput.addEventListener("keyup", function () {
-    console.log("firstName:", this.value);
+    console.log("fname:", this.value);
   });
 
 // document.getElementById("myH1").textContent = `Hello`;
