@@ -4,6 +4,7 @@ console.log(`I like pizza!`);
 window.alert(`This is an alert`);
 window.alert(`I like Pizza!`);
 
+/*
 const usernameInput = document.getElementById("username");
 
   usernameInput.addEventListener("keyup", function () {
@@ -15,6 +16,41 @@ const usernameInput = document.getElementById("username");
   firstnameInput.addEventListener("keyup", function () {
     console.log("fname:", this.value);
   });
+
+  const lastnameInput = document.getElementById("lname");
+
+  lastnameInput.addEventListener("keyup", function () {
+    console.log("lname:", this.value);
+  });
+
+   const phonenumberInput = document.getElementById("phone");
+  phonenumberInput.addEventListener("keyup", function () {
+    console.log("phone", this.value);
+  });
+
+    const emailaddressInput = document.getElementById("email");
+    emailaddressInput.addEventListener("keyup", function () {
+      console.log("email", this.value);
+    });
+
+    const passwordInput = document.getElementById("password");
+    passwordInput.addEventListener("keyup", function () {
+      console.log("password", this.value);
+    });
+  
+    const genderInput = document.getElementById("gender");
+    genderInput.addEventListener("change", function () {
+  console.log("Gender:", this.value);
+    });
+
+    const dateofbirthInput = document.getElementById("bdate");
+    dateofbirthInput.addEventListener("change", function () {
+    console.log("bdate", this.value);
+});
+
+*/
+
+
 
 // document.getElementById("myH1").textContent = `Hello`;
 // document.getElementById("myP").textContent = `My first JavaScript`;
@@ -153,7 +189,7 @@ console.log(onCreateBtn())
 function readMe (age){
 console.log('I am '+ age + 'years old.')
 }
-*/
+
 
 
 document.getElementById("mySubmit2").onclick = function() {
@@ -182,10 +218,14 @@ document.getElementById("mySubmit2").onclick = function() {
     console.log(payment);
     console.log(subscribe);
 }
+*/
 
 // Type conversion = change the datatype of a value to another
 //                   (strings, numbers, booleans)
 
+
+
+/* 
 let x = "Jay";
 let y = "Jay";
 let z = "Jay";
@@ -212,17 +252,76 @@ console.log(a, typeof a);
 console.log(b, typeof b);
 console.log(c, typeof c);
 
+*/
+
+// const = a variable that can't be changed
+
+let pi = 3.14159;
+let radius;
+let circumference;
+
+radius = window.prompt('Eneter the radius of a  circle');
+radius = Number(radius);
+
+circumference = 2 * pi * radius;
+
+console.log(circumference);
 
 
+// COUNTER PROGRAM
+
+const decreaseBtn = document.getElementById("decreaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countLabel = document.getElementById("countLabel");
+let count = 0;
 
 
+ 
+increaseBtn.onclick = function(){
+  count++;
+  countLabel.textContent = count;
+}
+
+decreaseBtn.onclick = function(){
+  count--;
+  countLabel.textContent = count;
+}
+resetBtn.onclick = function(){
+  count = 0;
+  countLabel.textContent = count;
+}
 
 
+// Math = built-in object that provides a collection of properties and methods
+
+let x = 8;
+let y = 2;
+let z = 4;
+
+//z= math.round(x);
+//z = math.floor(x);
+//z = math.ceil(x);
+//z = math.trunc(x);
+//z = math.pow(x,y);
+//z = math.sqrt(x);
+//z = math.log(x);
+//z = math.sin(x);
+//z = math.cos(x);
+//z = math.tan(x);
+
+let max = Math.max(x,y,z);
+let min = Math.min(x,y,z);
+
+console.log(max);
+console.log(min);
 
 
+// RANDOM NUMBER GENERATOR
 
 
+let randomNum = Math.floor(Math.random() * (max - min)) + 1;
 
-
+console.log(randomNum);
 
 //this is a comment
